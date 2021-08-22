@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+<div class="text-center">
+  <h1 class="display-1">What's the breed?</h1>
+  <h4>Upload a cat picture, and a machine learning algorithm will try to guess their breed!</h4>
+  <h6>Please keep in mind, only <i class="text-danger">.jpg</i> file types are supported.</h6>
+  <form enctype=multipart/form-data action="/result" method="post">
+    <input class="form-control form-control-lg" id="formFileLg" name="cat_upload" type="file">
+    <input class="btn btn-lg btn-block btn-primary" id="submit" type="submit" value="Submit">
+  </form>
+</div>
+{% endblock %}

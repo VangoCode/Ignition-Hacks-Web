@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Result
+{% endblock %}
+
+{% block main %}
+<div class="text-center">
+    <h1>You submitted <span class="display-5">{{ filename }}</span></h1>
+    <h2>The algorithm predicts that this cat breed is:</h2>
+    <h1 class="display-1 font-weight-bold text-info">{{ breed }}</h1>
+</div>
+{% endblock %}
